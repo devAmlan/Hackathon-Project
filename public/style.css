@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    background-color:#DDDDDD;
+    font-family: 'Poppins', sans-serif;
+}
+.heading {
+  text-align:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.headingtext{
+   width:400px;
+   height:400px;
+}
+.headingimage{
+    width:400px;
+    height:400px;
+ }
+.navbar ul{
+   display:flex;
+}
+.navbar li{
+    margin:10px 50px;
+    list-style:none;
+    font-size:20px;
+}
+.navbar a {
+  text-decoration:none;
+}
+.resourceheading h1{
+    text-align:center;
+}
+.addheading h1{
+    text-align:center;
+}
+#allresources{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   flex-wrap:wrap;
+}
+.resource-section{
+    margin:10px;
+    background-color:#082032;
+    width:300px;
+    height:300px;
+    border:none;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    color:#fafafa;
+    text-align:center;
+}
+#add-form{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#add-form form{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   flex-direction:column;
+}
+#add-form form input{
+    margin:10px; 
+    width:300px;
+    height:35px;
+    border:none;
+    outline:none;
+    border-radius:7px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:bold;
+    padding-left:5px;
+}
+#add-form form select{
+    margin:10px; 
+    width:300px;
+    height:35px;
+    border:none;
+    outline:none;
+    border-radius:7px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:bold;
+}
+#add-form  form button{
+    width:110px;
+    height:40px;
+    text-align:center;
+    background-color:#082032;
+    border:none;
+    color:#fafafa;
+    font-family: 'Poppins', sans-serif;
+    border-radius:10px;
+    font-weight:bolder;
+    cursor: pointer;
+}
+.fa-external-link-alt{
+    color:#fafafa;
+}
+#signinarea{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:#082032;
+}
+#signinarea h2{
+    font-size:40px;
+    color:#082032;
+}
+#signinarea a
+{
+    text-decoration:none;
+}
+#signupbtn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:230px;
+    height:45px;
+    background-color:#FAFAFA;
+    border:2px solid #4285F4;
+    border-radius:4px;
+    
+}
+#signupbtn h3{
+ font-size:15px;
+ text-decoration:none;
+ color:#4285F4;
+ font-family:inherit;
+ font-weight:bolder;
+}
+
+#signupbtn img{
+    width:20px;
+    height:20px;
+    cursor: pointer;
+    margin-right:10px;
+}

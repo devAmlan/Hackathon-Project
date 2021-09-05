@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <a href="/"><li>Home</li></a>
+            <a href="/resources"><li>Resources</li></a>
+            <a href="/add"><li>Add</li></a>
+            <a href="/login"><li>Signin</li></a>
+        </ul> 
+     </nav>
+    <div class="addheading"><h1>Add your resources</h1></div>
+     <div id="add-form">
+        <form action="/resources" method="POST">
+            <input type="text" placeholder="Add your name here" name="name">
+            <input type="text" placeholder="Add Title" name="title">
+            <input type="text" placeholder="Add Link of resource" name="resources">
+            <select name="category" id="skills">
+                <option value="web development">web development</option>
+                <option value="app development">App development</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Sales">Sales</option>
+                <option value="Design">Design</option>
+                <option value="Blockchain">Blockchain</option>
+                <option value="Finance">Finanace</option>
+            </select>
+            <button type="submit">ADD</button>
+        </form>
+     </div>
+</body>
+</html>
