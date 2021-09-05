@@ -7,7 +7,7 @@ module.exports = function(passport){
       new GoogleStrategy({
         clientID:process.env.GOOGLE_CLIENT_ID,
         clientSecret:process.env.GOOGLE_CLIENT_SECRET,
-        callbackURL:"http://localhost:2021/google/callback" //need to change before deploy into production
+        callbackURL:"https://hackathon-skillapp.herokuapp.com/google/callback" //need to change before deploy into production
       },(accessToken, refreshToken, profile,done)=>{
         googleAuth.findOne({email:profile.emails[0].value}).then((data)=>{
           if(data){

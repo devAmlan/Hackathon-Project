@@ -5,7 +5,7 @@ var Mongoose = require('mongoose')
 const passport = require('passport')
 const cookieSession  = require('cookie-session')
 require('dotenv').config();
-
+const port = process.env.PORT || 2021;
 app.use(cookieSession({
     maxAge:48*60*60*1000,
     keys:['bluelearnhackathon'] //secretkey for cookies
@@ -29,6 +29,6 @@ app.use(express.urlencoded({extended:true}));
 app.set('view engine','ejs')
 app.use(express.static('Public'))
 app.use(route)
-app.listen(2021,()=>{
+app.listen(port,()=>{
     console.log('listening at port 2021')
 })
